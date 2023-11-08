@@ -60,7 +60,7 @@ $(document).ready(function () {
   $(".navbar .cart-btn").on("click", function () {
     $(".cart").addClass("active");
   });
-  $(".cart .title svg").on("click", function () {
+  $(".cart .title img").on("click", function () {
     $(".cart").removeClass("active");
   });
 });
