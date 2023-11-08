@@ -128,7 +128,9 @@ textarea::placeholder {
   height: 24px;
   position: absolute;
   right: 14px;
-  top: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .navbar .search-head input {
@@ -258,7 +260,9 @@ textarea::placeholder {
   height: 24px;
   position: absolute;
   right: 14px;
-  top: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .catg-product .enquiry .search-enquiry input {
@@ -638,7 +642,9 @@ textarea::placeholder {
   height: 20px;
   position: absolute;
   right: 14px;
-  top: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .cart .info-inputs input {
@@ -1190,7 +1196,6 @@ input::-webkit-inner-spin-button {
   .navbar .search-head svg {
     width: 20px;
     height: 20px;
-    top: 9px;
   }
 
   .navbar .search-head input {
@@ -1277,7 +1282,6 @@ input::-webkit-inner-spin-button {
   .catg-product .enquiry .search-enquiry svg {
     width: 20px;
     height: 20px;
-    top: 9px;
   }
 
   .catg-product .enquiry .enquiry-btn {
