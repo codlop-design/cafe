@@ -52,6 +52,7 @@ a {
   color: inherit;
 }
 
+svg,
 svg * {
   fill: currentColor;
 }
@@ -1553,6 +1554,10 @@ input::-webkit-inner-spin-button {
   .quantity button {
     border: 1px solid #7723D6 !important;
     color: #fff !important;
+  }
+
+  .quantity button svg {
+    color: #fff;
   }
 
   .cart-list li .content-cart .delete-item {
