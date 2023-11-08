@@ -560,9 +560,9 @@ textarea::placeholder {
   -o-transition: .2s;
 }
 
-.quantity button svg {
-  width: 14px;
-  height: 14px;
+.quantity button img {
+  width: 16px;
+  height: 16px;
 }
 
 .quantity button:hover {
@@ -590,6 +590,11 @@ textarea::placeholder {
 .cart-list li .content-cart .delete-item:hover {
   border-color: #FF5285;
   color: #FF5285;
+}
+
+.cart-list li .content-cart .delete-item img {
+  width: 16px;
+  height: 16px;
 }
 
 .cart .totals {
