@@ -123,7 +123,7 @@ textarea::placeholder {
   margin-right: 60px;
 }
 
-.navbar .search-head svg {
+.navbar .search-head img {
   width: 24px;
   height: 24px;
   position: absolute;
@@ -1193,7 +1193,7 @@ input::-webkit-inner-spin-button {
     width: 100%;
   }
 
-  .navbar .search-head svg {
+  .navbar .search-head img {
     width: 20px;
     height: 20px;
   }
