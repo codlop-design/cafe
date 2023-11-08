@@ -21,6 +21,8 @@ body {
   background: #201D2B;
   color: #fff;
   font-size: 16px;
+  float: none;
+  zoom: 1;
 }
 
 .h1,
