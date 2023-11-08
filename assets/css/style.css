@@ -1132,19 +1132,16 @@ input::-webkit-inner-spin-button {
 }
 
 .accordion-flush .totals p span {
-  color: #fff;
-  font-size: 15px;
 }
 
 .accordion-flush .totals .total-lg {
   font-size: 17px;
   margin: 0;
   margin-top: 16px;
+  font-weight: 500;
 }
 
-.accordion-flush .totals .total-lg span {
-  font-size: 17px;
-}
+.accordion-flush .totals .total-lg span {color: #fff;}
 
 .back-icon {
   display: none;
