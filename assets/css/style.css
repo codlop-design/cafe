@@ -496,7 +496,7 @@ textarea::placeholder {
   gap: 16px;
 }
 
-.cart-list li img {
+.cart-list li > img {
   width: 80px;
   min-width: 80px;
   height: 80px;
