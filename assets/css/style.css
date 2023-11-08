@@ -1556,10 +1556,6 @@ input::-webkit-inner-spin-button {
     color: #fff !important;
   }
 
-  .quantity button svg {
-    color: #fff;
-  }
-
   .cart-list li .content-cart .delete-item {
     border: 1px solid #FF7CA3 !important;
     color: #FF7CA3 !important;
