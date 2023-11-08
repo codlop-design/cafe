@@ -157,7 +157,7 @@ textarea::placeholder {
   font-size: 18px;
   font-family: 'Bahij_Plain';
   border: 0;
-  box-shadow: 0px 8px 24px 0px rgba(129, 105, 234, 0.25);
+  box-shadow: 0px 8px 24px 0px rgba(129, 105, 234, 0.30);
   transition: .2s;
   -webkit-transition: .2s;
   -moz-transition: .2s;
@@ -182,7 +182,7 @@ textarea::placeholder {
   border-radius: 12px;
   align-items: center;
   border: 0;
-  box-shadow: 0px 8px 24px 0px rgba(129, 105, 234, 0.25);
+  box-shadow: 0px 8px 24px 0px rgba(129, 105, 234, 0.30);
   transition: .2s;
   -webkit-transition: .2s;
   -moz-transition: .2s;
@@ -279,7 +279,7 @@ textarea::placeholder {
   gap: 10px;
   font-size: 18px;
   border: 0;
-  box-shadow: 0px 8px 24px 0px rgba(129, 105, 234, 0.25);
+  box-shadow: 0px 8px 24px 0px rgba(129, 105, 234, 0.30);
   transition: .2s;
   -webkit-transition: .2s;
   -moz-transition: .2s;
@@ -606,19 +606,15 @@ textarea::placeholder {
   margin-bottom: 4px;
 }
 
-.cart .totals p span {
-  color: #fff;
-  font-size: 16px;
-}
-
 .cart .totals .total-lg {
-  font-size: 17px;
+  font-size: 18px;
   margin: 0;
   margin-top: 16px;
+  font-weight: 500;
 }
 
 .cart .totals .total-lg span {
-  font-size: 18px;
+  color: #fff;
 }
 
 .cart .title.custom-mb {
@@ -741,7 +737,7 @@ textarea::placeholder {
   font-size: 18px;
   border: 0;
   margin-top: 20px;
-  box-shadow: 0px 8px 24px 0px rgba(129, 105, 234, 0.25);
+  box-shadow: 0px 8px 24px 0px rgba(129, 105, 234, 0.30);
   transition: .2s;
   -webkit-transition: .2s;
   -moz-transition: .2s;
@@ -970,7 +966,7 @@ input::-webkit-inner-spin-button {
   color: #fff;
   font-size: 18px;
   margin-top: 30px;
-  box-shadow: 0px 8px 24px 0px rgba(129, 105, 234, 0.25);
+  box-shadow: 0px 8px 24px 0px rgba(129, 105, 234, 0.30);
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -1153,7 +1149,7 @@ input::-webkit-inner-spin-button {
 .back-icon {
   display: none;
   color: #ffffff;
-  width: 34px;
+  width: 30px;
   height: 30px;
   background: #7525d3;
   border-radius: 6px;
@@ -1434,7 +1430,7 @@ input::-webkit-inner-spin-button {
     font-size: 17px;
   }
 
-  .cart .totals .total-lg span {
+  .cart .totals .total-lg {
     font-size: 17px;
   }
 
@@ -1548,6 +1544,7 @@ input::-webkit-inner-spin-button {
 
   ::-webkit-scrollbar {
     display: none;
+    width: 0;
   }
 
   .modal-header .back-icon {
