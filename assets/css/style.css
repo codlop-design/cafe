@@ -90,7 +90,7 @@ textarea::placeholder {
 }
 
 .contant-page {
-  padding-top: 84px;
+  margin-top: 84px;
 }
 
 .navbar {
@@ -1237,7 +1237,7 @@ input::-webkit-inner-spin-button {
   }
 
   .contant-page {
-    padding-top: 119px;
+    margin-top: 119px;
   }
 
   .flex-boxs {
