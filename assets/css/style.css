@@ -12,6 +12,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  float: none;
+  zoom: 1;
 }
 
 body {
@@ -21,8 +23,6 @@ body {
   background: #201D2B;
   color: #fff;
   font-size: 16px;
-  float: none;
-  zoom: 1;
 }
 
 .h1,
@@ -1596,5 +1596,46 @@ input::-webkit-inner-spin-button {
 @media (max-width:350px) {
   .navbar .logo img {
     max-width: 140px;
+  }
+}
+
+@supports (padding-top: constant(safe-area-inset-top)) {
+  body {
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+}
+
+@media (display-mode: fullscreen) {
+  body {
+    padding: 0;
+  }
+}
+
+@media (display-mode: standalone) {
+  body {
+    padding: 0;
+  }
+}
+
+body {
+  height: 100%;
+}
+
+@supports (padding-top: env(safe-area-inset-top)) {
+  body {
+    --safe-area-inset-top: env(safe-area-inset-top);
+    height: calc(100% + var(--safe-area-inset-top));
+  }
+}
+
+@media (display-mode: fullscreen) {
+  body {
+    height: 100%;
+  }
+}
+
+@media (display-mode: standalone) {
+  body {
+    height: 100%;
   }
 }
