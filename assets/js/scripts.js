@@ -55,11 +55,21 @@ $(document).ready(function () {
 });
 
 
+// open cart
 $(document).ready(function () {
   $(".navbar .cart-btn").on("click", function () {
     $(".cart").addClass("active");
   });
   $(".cart .title svg").on("click", function () {
     $(".cart").removeClass("active");
+  });
+});
+
+
+// open enquiry
+$(document).ready(function () {
+  $(".enquiry-btn-mob").on("click", function () {
+    $(".enquiry").slideToggle();
+    $(".enquiry-btn-mob").addClass("active")
   });
 });

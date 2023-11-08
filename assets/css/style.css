@@ -759,6 +759,7 @@ textarea::placeholder {
   border: 0;
   padding: 20px;
   display: flex;
+  position: relative;
 }
 
 .modal-header .btn-close {
@@ -885,7 +886,7 @@ input::-webkit-inner-spin-button {
 }
 
 .product-information .p-price {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 3px;
   display: flex;
   align-items: center;
@@ -1148,8 +1149,28 @@ input::-webkit-inner-spin-button {
   font-size: 17px;
 }
 
+.back-icon {
+  display: none;
+  color: #AAA4B2;
+  width: 32px;
+  height: 32px;
+}
+
+.enquiry-btn-mob {
+  display: none;
+}
+
 /* responsive */
 @media (max-width:768px) {
+  body {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+  }
+
   .navbar {
     padding: 16px;
     gap: 12px;
@@ -1224,20 +1245,24 @@ input::-webkit-inner-spin-button {
     padding: 16px;
   }
 
-  .catg-product .enquiry .line {
+  .catg-product .enquiry {
+    margin-bottom: 20px;
     display: none;
   }
 
-  .catg-product .enquiry {
-    gap: 10px;
-    align-items: start;
-    flex-direction: column;
-    margin-bottom: 20px;
+  .catg-product .enquiry .title {
+    margin-bottom: 10px;
+  }
+
+
+  .catg-product .enquiry .line {
+    display: none;
   }
 
   .catg-product .enquiry .enquiry-input {
     flex-direction: column;
     width: 100%;
+    gap: 12px;
   }
 
   .catg-product .enquiry .search-enquiry input {
@@ -1254,7 +1279,6 @@ input::-webkit-inner-spin-button {
   }
 
   .catg-product .enquiry .enquiry-btn {
-    padding: 6px 30px;
     justify-content: center;
     border-radius: 10px;
     font-size: 16px;
@@ -1341,6 +1365,16 @@ input::-webkit-inner-spin-button {
     justify-content: space-between;
     margin-bottom: 30px;
     font-size: 20px;
+    z-index: 9;
+  }
+
+  .cart>.title {
+    justify-content: center;
+    background: #201d2b;
+    margin-bottom: 0;
+    min-height: 56px;
+    position: sticky;
+    top: 0;
   }
 
   .cart .title svg {
@@ -1348,12 +1382,14 @@ input::-webkit-inner-spin-button {
     height: 32px;
     color: #AAA4B2;
     display: flex;
+    position: absolute;
+    right: 20px;
   }
 
   .cart {
     width: 100%;
     min-width: unset;
-    padding: 16px;
+    padding: 0;
     background: #201d2b;
     position: fixed;
     z-index: 9;
@@ -1385,6 +1421,8 @@ input::-webkit-inner-spin-button {
 
   .sticky-cart {
     position: unset;
+    padding: 16px;
+    padding-bottom: 70px;
   }
 
   .cart-list {
@@ -1432,12 +1470,12 @@ input::-webkit-inner-spin-button {
   .modal-dialog {
     margin: 0;
     transition: unset !important;
-    height: 100%;
   }
 
   .modal-content {
     background: unset;
     height: 100%;
+    border: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -1447,16 +1485,24 @@ input::-webkit-inner-spin-button {
 
   .close-modal {
     color: #AAA4B2;
+    display: none;
   }
 
   .modal-header {
     gap: 10px;
     padding: 16px;
-    padding-bottom: 0;
+    justify-content: center;
+    min-height: 56px;
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+    background: #1f1d2b;
+    border-radius: 0;
   }
 
   .modal-body {
     padding: 16px;
+    padding-bottom: 70px;
   }
 
   .img-product-details {
@@ -1471,7 +1517,7 @@ input::-webkit-inner-spin-button {
   }
 
   .img-product-details .product-information .p-name {
-    font-size: 20px;
+    font-size: 22px;
   }
 
   .product-information .p-price .n-price {
@@ -1494,4 +1540,58 @@ input::-webkit-inner-spin-button {
     font-size: 17px;
   }
 
+  .confirm-order {
+    padding: 8px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .modal-header .back-icon {
+    display: flex;
+    position: absolute;
+    right: 20px;
+  }
+
+  .quantity button {
+    border: 1px solid #7723D6 !important;
+    color: #fff !important;
+  }
+
+  .cart-list li .content-cart .delete-item {
+    border: 1px solid #FF7CA3 !important;
+    color: #FF7CA3 !important;
+  }
+
+  .enquiry-btn-mob {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid #7723D6;
+    box-shadow: 0px 8px 24px 0px rgb(129 105 234 / 15%);
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+    background: unset;
+    color: #9F79E0;
+  }
+
+  .enquiry-btn-mob.active {
+    display: none;
+  }
+
+}
+
+@media (max-width:450px) {
+  .navbar .logo img {
+    max-width: 165px;
+  }
+}
+
+@media (max-width:350px) {
+  .navbar .logo img {
+    max-width: 140px;
+  }
 }

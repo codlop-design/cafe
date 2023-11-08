@@ -41,6 +41,12 @@
   <div class="contant-page">
     <div class="flex-boxs">
       <div class="catg-product">
+        <button class="enquiry-btn-mob">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <use xlink:href="#enquiry-svg"></use>
+          </svg>
+          اضغط هنا للإستعلام عن طلب
+        </button>
         <div class="enquiry">
           <h3 class="title">استعلام عن الطلب</h3>
           <span class="line"></span>
@@ -642,12 +648,13 @@
 
       </div>
       <div class="cart">
+        <div class="title">
+          <svg class="back-icon" width="40" height="40" viewBox="0 0 24 24" fill="none">
+            <use xlink:href="#back-svg"></use>
+          </svg>
+          السلة
+        </div>
         <div class="sticky-cart">
-          <div class="title">السلة
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <use xlink:href="#close-svg"></use>
-            </svg>
-          </div>
           <ul class="cart-list">
             <li>
               <img src="assets/images/products/1.png" alt="">
@@ -770,7 +777,10 @@
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
-          <h5>تفاصيل المنتج</h5>
+          <svg class="back-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" data-bs-dismiss="modal" aria-label="Close">
+            <use xlink:href="#back-svg"></use>
+          </svg>
+          <h5></h5>
           <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
               <use xlink:href="#close-svg"></use>
@@ -787,7 +797,6 @@
               <div class="p-price">
                 <p class="n-price">15 <em>ريال سعودي</em></p>
               </div>
-              <p class="tax">الأسعار تشمل ضريبة القيمة المضافة</p>
               <p class="more-prd-details">
                 الإسبريسو هو مشروب قهوة إيطالي يتم تحضيره عن طريق دفع الماء الساخن تحت ضغط عالٍ من خلال حبيبات البن
                 المطحونة ناعماً. يتميز الإسبريسو بطعمه القوي والغني والكريمي.
@@ -825,8 +834,7 @@
               </div>
 
               <button class="add-to-cart">
-                <i class="fa-solid fa-cart-shopping"></i>
-                اضف الي السلة
+                إضافة إلى السلة
               </button>
 
             </div>
@@ -842,6 +850,9 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
+          <svg class="back-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" data-bs-dismiss="modal" aria-label="Close">
+            <use xlink:href="#back-svg"></use>
+          </svg>
           <h5>استعلام عن الطلب</h5>
           <button type="button" class="close-modal" data-bs-dismiss="modal" aria-label="Close">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -1224,6 +1235,9 @@
             <rect width="40" height="40" fill="white" />
           </clipPath>
         </defs>
+      </symbol>
+      <symbol id="back-svg">
+        <path d="M23.12,9.91,19.25,6a1,1,0,0,0-1.42,0h0a1,1,0,0,0,0,1.41L21.39,11H1a1,1,0,0,0-1,1H0a1,1,0,0,0,1,1H21.45l-3.62,3.61a1,1,0,0,0,0,1.42h0a1,1,0,0,0,1.42,0l3.87-3.88A3,3,0,0,0,23.12,9.91Z"/>
       </symbol>
       <symbol id="cart-svg">
         <g clip-path="url(#clip0_219_1212)">
