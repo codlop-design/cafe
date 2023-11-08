@@ -1152,9 +1152,11 @@ input::-webkit-inner-spin-button {
 
 .back-icon {
   display: none;
-  color: #AAA4B2;
-  width: 28px;
-  height: 28px;
+  color: #ffffff;
+  width: 34px;
+  height: 30px;
+  background: #7525d3;
+  border-radius: 6px;
 }
 
 .enquiry-btn-mob {
@@ -1379,13 +1381,10 @@ input::-webkit-inner-spin-button {
   }
 
   .cart .title svg {
-    width: 28px;
-    height: 28px;
-    color: #AAA4B2;
     display: flex;
     position: absolute;
     right: 16px;
-    top: 12px;
+    top: 13px;
   }
 
   .cart {
