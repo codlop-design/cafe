@@ -29,6 +29,7 @@ body {
   background: #201D2B;
   color: #fff;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 .h1,
@@ -1904,6 +1905,11 @@ input::-webkit-inner-spin-button {
     display: none;
   }
 
+  .ctg-swiper  {
+    overflow: unset;
+    clip-path: inset( -100vw 0 -100vw -100vw );
+}
+
 }
 
 @media (max-width:450px) {
@@ -1930,7 +1936,7 @@ input::-webkit-inner-spin-button {
   }
 }
 
-
+/* light mode */
 body[data-theme=light] {
   background: #fff;
   color: #0c0416;
