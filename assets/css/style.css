@@ -84,6 +84,8 @@ em {
 
 input,
 textarea {
+  box-shadow: unset;
+  outline: unset;
   appearance: none;
   color: #fff;
 }
