@@ -73,3 +73,17 @@ $(document).ready(function () {
     $(".enquiry-btn-mob").addClass("active")
   });
 });
+
+
+$(document).ready(function(){
+  var savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    $('body').attr('data-theme', savedTheme);
+  }
+  $('.change-mode').click(function(){
+    var currentTheme = $('body').attr('data-theme');
+    var newTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+    $('body').attr('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  });
+});
