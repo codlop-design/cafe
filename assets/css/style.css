@@ -86,6 +86,7 @@ input,
 textarea {
   box-shadow: unset;
   outline: unset;
+  -webkit-appearance: none;
   appearance: none;
   color: #fff;
 }
