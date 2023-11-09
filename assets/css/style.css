@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 @font-face {
   font-family: 'Bahij_Plain';
@@ -580,12 +574,6 @@ button {
   background: #201d2b;
 }
 
-
-.sticky-cart {
-  position: sticky;
-  top: 156px;
-}
-
 .cart .title {
   margin-bottom: 16px;
   font-weight: 500;
@@ -593,6 +581,15 @@ button {
 
 .cart .title img {
   display: none;
+}
+
+.cart > .title {
+  display: none;
+}
+
+.sticky-cart {
+  position: sticky;
+  top: 108px;
 }
 
 .cart-list {
@@ -1745,6 +1742,10 @@ input::-webkit-inner-spin-button {
     position: unset;
     padding: 16px;
     padding-bottom: 85px;
+  }
+
+  .sticky-cart > .title {
+    display: none;
   }
 
   .cart-list {
