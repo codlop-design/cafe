@@ -84,7 +84,7 @@ em {
 
 input,
 textarea {
-  -webkit-appearance: none;
+  appearance: none;
   color: #fff;
 }
 
