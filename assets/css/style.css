@@ -1961,7 +1961,7 @@ body[data-theme=light] input,
 body[data-theme=light] textarea,
 body[data-theme=light] .accordion-flush .accordion-button,
 body[data-theme=light] .cart .totals .total-lg span,
-.accordion-flush .totals .total-lg span {
+body[data-theme=light] .accordion-flush .totals .total-lg span {
   color: #0c0416;
 }
 
